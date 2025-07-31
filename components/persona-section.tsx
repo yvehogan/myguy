@@ -53,7 +53,7 @@ export default function PersonaSection() {
           className="text-base text-neutral-200 mb-16 max-w-2xl mx-auto leading-relaxed"
           delay={0.3}
         >
-          Whether you're seeking guidance, healing, or just someone to talk to—Guyversation is a safe space for every
+          Whether you&apos;re seeking guidance, healing, or just someone to talk to—Guyversation is a safe space for every
           boy and man on a journey to become whole.
         </AnimatedText>
 

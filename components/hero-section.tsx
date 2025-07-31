@@ -30,7 +30,7 @@ export default function HeroSection() {
               className="text-lg text-neutral-200 font-light mb-16 max-w-2xl mx-auto leading-relaxed"
               delay={0.4}
             >
-              MyGuy is Africa's first digital community that connects boys to
+              MyGuy is Africa&apos;s first digital community that connects boys to
               mentors, men to community, and everyone to healing.
             </AnimatedText>
             

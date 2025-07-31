@@ -75,7 +75,7 @@ export default function WhatWeDoSection() {
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          We're building a space where men don't just survive—they grow, lead, and heal.
+          We&apos;re building a space where men don&apos;t just survive—they grow, lead, and heal.
         </AnimatedText>
       </div>
     </section>

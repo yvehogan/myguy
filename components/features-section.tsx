@@ -1,12 +1,10 @@
 "use client";
-import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { 
   AnimatedContainer, 
   AnimatedElement, 
   AnimatedHeading, 
   AnimatedText,
-  staggerChildren
 } from "@/components/ui/animated-element"
 
 export default function FeaturesSection() {

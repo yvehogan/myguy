@@ -3,7 +3,6 @@ import Link from "next/link";
 import Navbar from "./navbar";
 import { 
   AnimatedContainer, 
-  AnimatedElement, 
   AnimatedHeading, 
   AnimatedText 
 } from "@/components/ui/animated-element";

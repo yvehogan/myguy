@@ -2,19 +2,12 @@
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { 
-  AnimatedContainer, 
   AnimatedElement, 
   AnimatedHeading, 
   AnimatedText,
   fadeInLeft,
   fadeInRight
 } from "@/components/ui/animated-element"
-import dynamic from "next/dynamic"
-
-const MotionBadge = dynamic(() => import("framer-motion").then(mod => {
-  const MotionComponent = mod.motion(Badge);
-  return MotionComponent;
-}), { ssr: false });
 
 export default function AboutSection() {
   return (
@@ -44,7 +37,7 @@ export default function AboutSection() {
             className="text-md text-secondary-900 mb-6 leading-6"
             delay={0.4}
           >
-            A burden for the quiet struggles of African boys and men. The stories no one hears. The pain that's masked
+            A burden for the quiet struggles of African boys and men. The stories no one hears. The pain that&apos;s masked
             with silence. The pressure to be strong, but never soft. To lead, but never break.
           </AnimatedText>
           
@@ -52,7 +45,7 @@ export default function AboutSection() {
             className="text-md text-secondary-900mb-6 leading-6 mb-10"
             delay={0.5}
           >
-            As mentors, friends, and brothers, we saw too many boys growing up with wounds they weren't allowed to
+            As mentors, friends, and brothers, we saw too many boys growing up with wounds they weren&apos;t allowed to
             name—let alone heal. And too many men carrying pain that that no one had space for.
           </AnimatedText>
           
@@ -60,7 +53,7 @@ export default function AboutSection() {
             className="text-md text-secondary-900leading-6"
             delay={0.6}
           >
-            That's why we built: MyGuy.
+            That&apos;s why we built: MyGuy.
           </AnimatedText>
         </AnimatedElement>
         

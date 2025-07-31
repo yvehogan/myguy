@@ -2,7 +2,6 @@
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { 
-  AnimatedContainer, 
   AnimatedElement, 
   AnimatedHeading, 
   AnimatedText 
@@ -51,7 +50,7 @@ export default function FaqSection() {
           className="text-[40px] font-medium text-secondary-900 leading-tight mb-4"
           delay={0.2}
         >
-          Get the answers you're looking for
+          Get the answers you&apos;re looking for
         </AnimatedHeading>
         
         <AnimatedText 

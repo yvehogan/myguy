@@ -1,6 +1,5 @@
 "use client";
 import { Button } from "@/components/ui/button"
-import { Users } from "lucide-react"
 import Image from "next/image"
 import { 
   AnimatedContainer, 
@@ -42,8 +41,8 @@ export default function PartnerSection() {
           className="text-base text-[#F4F4F4] mb-12 leading-relaxed"
           delay={0.3}
         >
-          We're on a mission to redefine masculinity in Africa through healing, mentoring, and honest conversation. But
-          we can't do it alone.
+          We&apos;re on a mission to redefine masculinity in Africa through healing, mentoring, and honest conversation. But
+          we can&apos;t do it alone.
         </AnimatedText>
         
         <AnimatedElement

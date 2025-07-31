@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
@@ -32,9 +33,7 @@ const MotionH1 = dynamic(() => import("framer-motion").then(mod => mod.motion.h1
 const MotionH2 = dynamic(() => import("framer-motion").then(mod => mod.motion.h2), { ssr: false });
 const MotionH3 = dynamic(() => import("framer-motion").then(mod => mod.motion.h3), { ssr: false });
 const MotionP = dynamic(() => import("framer-motion").then(mod => mod.motion.p), { ssr: false });
-const MotionSpan = dynamic(() => import("framer-motion").then(mod => mod.motion.span), { ssr: false });
 
-// Generic interface for animated elements
 interface AnimatedElementProps {
   children: React.ReactNode;
   variants?: any;
@@ -130,9 +129,6 @@ export function AnimatedHeading({
     setIsMounted(true);
   }, []);
 
-  // Filter out Framer Motion specific props for the fallback element
-  const domProps = { ...props };
-  
   if (!isMounted) {
     return React.createElement(`h${level}`, { className: props.className }, children);
   }
@@ -176,8 +172,6 @@ export function AnimatedText({
     setIsMounted(true);
   }, []);
 
-  const domProps = { ...props };
-  
   if (!isMounted) {
     return <p className={props.className}>{children}</p>;
   }
@@ -221,8 +215,6 @@ export function AnimatedContainer({
     setIsMounted(true);
   }, []);
 
-  // Filter out Framer Motion specific props for the fallback div
-  const domProps = { ...props };
   
   if (!isMounted) {
     return <div className={props.className}>{children}</div>;
