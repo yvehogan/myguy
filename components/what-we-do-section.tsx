@@ -55,7 +55,7 @@ export default function WhatWeDoSection() {
           {offerings.map((offering, index) => (
             <AnimatedElement
               key={index}
-              className="w-full md:w-[30%] text-secondary-900 py-10 rounded-2xl text-base bg-[#F3E9FD] border-l-4 border-[#7B20C8]"
+              className="w-full md:w-[30%] text-secondary-900 py-10 rounded-2xl text-base bg-[#F3E9FD] border-l-4 border-[#7B20C8] p-4"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 }

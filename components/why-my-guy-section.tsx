@@ -19,15 +19,14 @@ export default function WhyMyGuySection() {
           duration={0.8}
           delay={0.3}
         >
-          <div className="bg-[#DAACFF] relative w-full max-w-xl h-[400px] md:h-[500px] lg:h-[600px] rounded-[40px] overflow-hidden p-8">
             <Image
               src="/svgs/whymyguy.svg"
               alt="Man speaking to a group of boys at an event"
-              layout="fill"
+              height={600}
+              width={600}
               objectFit="contain"
-              className="rounded-[40px]"
+              className="rounded-[40px] bg-[#DAACFF]"
             />
-          </div>
         </AnimatedElement>
         
         <AnimatedElement 
