@@ -33,7 +33,18 @@ export default function Navbar() {
           Join the Waitlist
         </Button>
       </div>
-      <div className="md:hidden">
+      
+      {/* Mobile view */}
+      <div className="md:hidden w-full flex justify-between items-center">
+        <Image
+          src='/svgs/logo2.svg'
+          alt="MyGuy Logo"
+          width={100}
+          height={100}
+          className="rounded-full"
+        />
+        
+        {/* Mobile menu trigger - positioned on the right */}
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="text-gray-900">
@@ -45,12 +56,13 @@ export default function Navbar() {
             side="right"
             className="w-[350px] sm:w-[300px] bg-white p-6 flex flex-col items-start space-y-6"
           >
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <span className="text-gray-900 font-semibold text-xl">myguy</span>
-            </div>
+           <Image
+          src='/svgs/logo2.svg'
+          alt="MyGuy Logo"
+          width={100}
+          height={100}
+          className="rounded-full"
+        />
             <Link href="/" className="text-gray-900 hover:text-purple-600 transition-colors text-lg font-medium">
               Home
             </Link>
@@ -63,7 +75,7 @@ export default function Navbar() {
             <Link href="#" className="text-gray-900 hover:text-purple-600 transition-colors text-lg font-medium">
               Partner
             </Link>
-            <Button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-full px-6 py-3 text-lg font-medium w-full">
+            <Button className="px-6 py-3 text-lg font-medium w-full">
               Join the Waitlist
             </Button>
           </SheetContent>

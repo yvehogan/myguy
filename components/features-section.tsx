@@ -89,7 +89,7 @@ export default function FeaturesSection() {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
               <div
-                className="absolute inset-0 w-full h-full bg-cover bg-center bg-[#F3E9FD]"
+                className="absolute inset-0 w-full h-[440px] md:h-full bg-cover bg-center bg-[#F3E9FD]"
                 style={{
                   backgroundImage: `url('${feature.icon}')`,
                 }}

@@ -83,14 +83,14 @@ export default function PersonaSection() {
                 transition: { duration: 0.3 } 
               }}
             >
-              <div className="relative w-full overflow-hidden">
+              <div className="relative w-full overflow-hidden h-[440px] md:h-auto">
                 <Image
                   src={persona.image || persona.bgColor}
                   alt={persona.title}
-                  height={500}
+                  height={400}
                   width={400}
                   objectFit="cover"
-                  className="overflow-hidden rounded-[40px]"
+                  className="overflow-hidden"
                   // style={{ backgroundColor: persona.bgColor }}
                 />
               </div>
