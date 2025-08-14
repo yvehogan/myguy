@@ -20,7 +20,7 @@ export default function WhyMyGuySection() {
           delay={0.3}
         >
             <Image
-              src="/svgs/whymyguy.svg"
+              src="/images/whymyguy.png"
               alt="Man speaking to a group of boys at an event"
               height={600}
               width={600}

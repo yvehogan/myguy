@@ -10,32 +10,32 @@ import {
 export default function FeaturesSection() {
   const features = [
     {
-      icon: "/svgs/find.svg",
+      icon: "/images/find.png",
       title: "Find a Mentor",
       description: "Connect with verified male mentors across the world.",
     },
     {
-      icon: "/svgs/tribe.svg",
+      icon: "/images/tribe.png",
       title: "Join a Tribe",
       description: "Men & boys in niche communities (faith, fatherhood, career healing)",
     },
     {
-      icon: "/svgs/therapy.svg",
+      icon: "/images/therapy.png",
       title: "Book a Therapy Session",
       description: "Talk to a licensed therapist who understands the male experience.",
     },
     {
-      icon: "/svgs/masterclass.svg",
+      icon: "/images/masterclass.png",
       title: "Attend a Masterclass",
       description: "Learn purpose, money, relationships, mental wellness.",
     },
     {
-      icon: "/svgs/virtual.svg",
+      icon: "/images/virtual.png",
       title: "Join a Virtual Safe Room",
       description: "Weekly check-ins, prayer rooms, and accountability spaces.",
     },
     {
-      icon: "/svgs/involved.svg",
+      icon: "/images/involved.png",
       title: "Get Involved",
       description: "Become a mentor, facilitator, or partner.",
     },
@@ -66,7 +66,7 @@ export default function FeaturesSection() {
         </AnimatedText>
 
         <AnimatedContainer 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"
           variants={{
             hidden: {},
             visible: {

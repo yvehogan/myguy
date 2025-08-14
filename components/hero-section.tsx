@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <div className="p-2 rounded-full">
       <div
-        className="min-h-screen bg-[#F2F4FF] bg-[url('/svgs/hero.svg')] p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-hidden flex flex-col pb-[400px] rounded-[40px]"
+        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero.png')] p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-hidden flex flex-col pb-[400px] rounded-[40px]"
         style={{ backgroundPosition: "center top" }}
       >
         <Navbar />

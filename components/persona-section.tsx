@@ -12,22 +12,22 @@ export default function PersonaSection() {
   const personas = [
     {
       title: "Mentees",
-      image: "/svgs/mentees.svg",
+      image: "/images/mentees.png",
       bgColor: "#DAACFF"
     },
     {
       title: "Mentors",
-      image: "/svgs/mentor.svg",
+      image: "/images/mentor.png",
       bgColor: "#A2F0D6"
     },
     {
       title: "Parents & Guardians",
-      image: "/svgs/parents.svg",
+      image: "/images/parents.png",
       bgColor: "#FFB199"
     },
     {
       title: "Schools & Organizations",
-      image: "/svgs/schools.svg",
+      image: "/images/schools.png",
       bgColor: "#FF9BC9"
     },
   ]

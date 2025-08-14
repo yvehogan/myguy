@@ -10,7 +10,7 @@ import {
 
 export default function PartnerSection() {
   return (
-    <section className="bg-[#AD66E6] bg-[url('/svgs/partners.svg')] bg-cover bg-center text-center relative overflow-hidden my-20 py-16 p-4">
+    <section className="bg-[#AD66E6] bg-[url('/images/partner.png')] bg-cover bg-center text-center relative overflow-hidden my-20 py-16 p-4">
       <AnimatedContainer className="max-w-xl mx-auto relative z-10">
         <AnimatedElement
           initial={{ scale: 0, opacity: 0 }}
