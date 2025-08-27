@@ -10,14 +10,14 @@ import {
 
 export default function HeroSection() {
   return (
-    <div className="p-2 rounded-full">
+    <div className="p-2">
       <div
-        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero.png')] p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-hidden flex flex-col pb-[400px] rounded-[40px]"
+        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero.png')] p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-[40px]"
         style={{ backgroundPosition: "center top" }}
       >
         <Navbar />
-        <div className="flex-grow flex items-center justify-center md:px-8 pt-10 md:pt-24 pb-40">
-          <AnimatedContainer className="text-center">
+        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt-10 md:pt-24 pb-40 w-full">
+          <AnimatedContainer className="text-center w-full">
             <AnimatedHeading 
               level={1}
               className="text-3xl md:text-[65px] font-medium text-secondary-900 leading-tight mb-8 w-full md:max-w-6xl mx-auto"

@@ -10,34 +10,34 @@ import {
 export default function FeaturesSection() {
   const features = [
     {
-      icon: "/images/find.png",
-      title: "Find a Mentor",
-      description: "Connect with verified male mentors across the world.",
-    },
-    {
       icon: "/images/tribe.png",
-      title: "Join a Tribe",
-      description: "Men & boys in niche communities (faith, fatherhood, career healing)",
-    },
-    {
-      icon: "/images/therapy.png",
-      title: "Book a Therapy Session",
-      description: "Talk to a licensed therapist who understands the male experience.",
-    },
-    {
-      icon: "/images/masterclass.png",
-      title: "Attend a Masterclass",
-      description: "Learn purpose, money, relationships, mental wellness.",
-    },
-    {
-      icon: "/images/virtual.png",
-      title: "Join a Virtual Safe Room",
-      description: "Weekly check-ins, prayer rooms, and accountability spaces.",
+      title: "Close Mentorship",
+      description: "A big brother in your pocket. Someone who's been there, gets it, and has time for you.",
     },
     {
       icon: "/images/involved.png",
-      title: "Get Involved",
-      description: "Become a mentor, facilitator, or partner.",
+      title: "Access Therapy",
+      description: "Real professionals. No judgment. Just the tools to help you untangle what's on your mind.",
+    },
+    {
+      icon: "/images/find.png",
+      title: "Community",
+      description: "Your tribe of guys who talk, listen, and show up, even on the quiet days.",
+    },
+    {
+      icon: "/images/therapy.png",
+      title: "Mood Check-ins",
+      description: "A quick “how's your spirit today?” because your feelings matter here.",
+    },
+    {
+      icon: "/images/virtual.png",
+      title: "Journaling",
+      description: "Drop your thoughts where they're safe. No filters, no likes, just truth.",
+    },
+    {
+      icon: "/images/masterclass.png",
+      title: "Challenges & Courses",
+      description: "Learn. Unlearn. Level up. Bite-sized lessons that stick with you for life.",
     },
   ]
 
@@ -89,13 +89,13 @@ export default function FeaturesSection() {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
               <div
-                className="absolute inset-0 w-full h-[440px] md:h-full bg-cover bg-center bg-[#F3E9FD]"
+                className="absolute inset-0 w-full h-[450px] md:h-full bg-cover bg-center bg-[#F3E9FD]"
                 style={{
                   backgroundImage: `url('${feature.icon}')`,
                 }}
               />
               <div className="relative z-10 w-full items-start text-left px-6 pb-6">
-                <h3 className="text-[26px] font-medium text-secondary-900 mb-2">{feature.title}</h3>
+                <h3 className="text-[26px] font-medium text-secondary-900 mb-1">{feature.title}</h3>
                 <p className="text-neutral-200 leading-relaxed font-light">{feature.description}</p>
               </div>
             </AnimatedElement>

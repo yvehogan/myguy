@@ -10,29 +10,54 @@ import {
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What features are included in your mentorship plans?",
+      question: "What is MYGUY?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent Quisque cursus nisl adipiscing commodo Lorem non amet, non. risus diam ipsum ex elit fringilla at, sollicitudin. Nam non libero, placerat quis vitae tincidunt Ut at sollicitudin. vitae massa eu placerat sed porta Lorem ullamcorper enim, eget sit nec gravida vitae tempor nibh Vestibulum placerat. tincidunt tincidunt ultrices scelerisque luctus tempor Cras amet, faucibus non adipiscing sit dui sollicitudin. non lacus sit hendrerit scelerisque",
+        "MYGUY is a mentorship and mental wellness platform built for boys and men. We connect you with trusted mentors, licensed therapists, and supportive communities so you can grow, heal, and thrive.",
     },
     {
-      question: "What is the eligibility criteria for mentors?",
+      question: "Who can use MYGUY?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent Quisque cursus nisl adipiscing commodo Lorem non amet, non. risus diam ipsum ex elit fringilla at, sollicitudin. Nam non libero, placerat quis vitae tincidunt Ut at sollicitudin. vitae massa eu placerat sed porta Lorem ullamcorper enim, eget sit nec gravida vitae tempor nibh Vestibulum placerat. tincidunt tincidunt ultrices scelerisque luctus tempor Cras amet, faucibus non adipiscing sit dui sollicitudin. non lacus sit hendrerit scelerisque",
+        "Any male, from teenage boys to grown men, looking for guidance, support, or a safe space to talk. Parents and schools can also sign up to support the young men in their care.",
     },
     {
-      question: "How do I join the waitlist?",
+      question: "How does mentorship work?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent Quisque cursus nisl adipiscing commodo Lorem non amet, non. risus diam ipsum ex elit fringilla at, sollicitudin. Nam non libero, placerat quis vitae tincidunt Ut at sollicitudin. vitae massa eu placerat sed porta Lorem ullamcorper enim, eget sit nec gravida vitae tempor nibh Vestibulum placerat. tincidunt tincidunt ultrices scelerisque luctus tempor Cras amet, faucibus non adipiscing sit dui sollicitudin. non lacus sit hendrerit scelerisque",
+        "You get matched with a mentor based on your goals, career interests, and life stage. You can meet online, set your preferred schedule, and work together to achieve your personal or professional goals."
     },
     {
-      question: "Is there a mobile app available?",
+      question: "Is therapy on MYGUY confidential?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent Quisque cursus nisl adipiscing commodo Lorem non amet, non. risus diam ipsum ex elit fringilla at, sollicitudin. Nam non libero, placerat quis vitae tincidunt Ut at sollicitudin. vitae massa eu placerat sed porta Lorem ullamcorper enim, eget sit nec gravida vitae tempor nibh Vestibulum placerat. tincidunt tincidunt ultrices scelerisque luctus tempor Cras amet, faucibus non adipiscing sit dui sollicitudin. non lacus sit hendrerit scelerisque",
+        "Yes. All therapy sessions are private and handled by licensed professionals. What you share stays between you and your therapist.",
     },
     {
-      question: "What kind of support is available?",
+      question: "Do I have to pay to use MYGUY?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent Quisque cursus nisl adipiscing commodo Lorem non amet, non. risus diam ipsum ex elit fringilla at, sollicitudin. Nam non libero, placerat quis vitae tincidunt Ut at sollicitudin. vitae massa eu placerat sed porta Lorem ullamcorper enim, eget sit nec gravida vitae tempor nibh Vestibulum placerat. tincidunt tincidunt ultrices scelerisque luctus tempor Cras amet, faucibus non adipiscing sit dui sollicitudin. non lacus sit hendrerit scelerisque",
+        "Most features are free, like community access and basic mentorship. Therapy sessions and certain premium programs may require a fee.",
+    },
+    {
+      question: "How do I know my mentor or therapist is legit?",
+      answer:
+        "Every mentor and therapist on MYGUY is vetted, with identity verification and professional credentials checked before they can work with you.",
+    },
+    {
+      question: "Can parents use MYGUY?",
+      answer:
+        "Yes. Parents can create accounts, connect their children with mentors or therapists, track progress, and be part of parent support groups.",
+    },
+    {
+      question: "Can I switch my mentor or therapist?",
+      answer:
+        "Absolutely. If you feel you're not a good fit, you can request a change anytime, no hard feelings.",
+    },
+    {
+      question: "How do mood check-ins and journaling work?",
+      answer:
+        "You can log your daily mood, track changes over time, and keep private notes or reflections in your journal. It's your personal space to reflect and grow.",
+    },
+    {
+      question: "Is MYGUY available worldwide?",
+      answer:
+        "We're starting in select regions, but we're expanding. Check the app to see if we're live in your area.",
     },
   ]
 
@@ -70,12 +95,12 @@ export default function FaqSection() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-[#9E9E9E] rounded-[20px] px-6 py-4 bg-white text-left last:mb-20 last:pb-10"
+                className="border border-[#9E9E9E] rounded-[20px] px-6 py-4 bg-white text-left last:mb-20 last:pb-5"
               >
                 <AccordionTrigger className="text-secondary-900 text-base font-medium hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-neutral-200 font-light text-sm leading-relaxed pt-4">
+                <AccordionContent className="text-neutral-200 font-light text-sm leading-relaxed pt-2">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
