@@ -4,10 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import {
   AnimatedElement,
   AnimatedContainer,
-  AnimatedHeading,
   AnimatedText,
   fadeInLeft,
-  fadeInRight,
 } from "@/components/ui/animated-element";
 
 export default function AboutUsSection() {

@@ -1,6 +1,7 @@
 import WaitlistForm from "@/components/waitlist-form";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       </div>
       {/* Desktop/Tablet Logo */}
       <div className="absolute top-8 left-8 hidden md:block">
-        <a href="/">
+        <Link href="/">
           <Image
             src="/svgs/logo2.svg"
             alt="MyGuy Logo"
@@ -26,7 +27,7 @@ export default function Home() {
             height={120}
             className="mb-5 cursor-pointer"
           />
-        </a>
+        </Link>
       </div>
       <WaitlistForm />
     </main>

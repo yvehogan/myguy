@@ -5,7 +5,6 @@ import {
   AnimatedContainer,
   AnimatedElement,
   AnimatedHeading,
-  AnimatedText,
 } from "@/components/ui/animated-element";
 
 export default function AboutTeamSection() {

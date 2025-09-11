@@ -1,7 +1,5 @@
 "use client"
-
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -74,6 +72,7 @@ export default function WaitlistForm() {
         toast.error(errorData.error || "Failed to submit")
       }
     } catch (error) {
+      console.log(error);
       toast.error("Something went wrong. Please try again.")
     } finally {
       setIsSubmitting(false)
