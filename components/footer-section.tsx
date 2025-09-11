@@ -13,8 +13,8 @@ import {
 
 export default function FooterSection() {
   return (
-    <div className="p-2 rounded-full">
-      <div className="bg-secondary-900 rounded-[40px]">
+    <div className="md:p-2 rounded-full">
+      <div className="bg-secondary-900 md:rounded-[40px]">
         <footer className="py-20 max-w-6xl mx-auto text-white p-4">
           <AnimatedContainer className="flex flex-col md:flex-row justify-between items-start mb-12">
             <AnimatedHeading
@@ -38,7 +38,7 @@ export default function FooterSection() {
                 className="w-full px-4 py-3 rounded-full bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-600"
               />
               <Button className="absolute right-3 top-1 bottom-0 text-white rounded-full h-10 w-[60px]">
-              <IoIosSend className="w-5 h-5 text-white" />
+                <IoIosSend className="w-5 h-5 text-white" />
               </Button>
             </AnimatedElement>
           </AnimatedContainer>
@@ -71,107 +71,108 @@ export default function FooterSection() {
                 height={120}
                 className="mb-5"
               />
-              <p className="text-white text-sm leading-relaxed max-w-sm">
+              <p className="text-white text-sm leading-relaxed w-full md:max-w-sm">
                 Redefining masculinity in Africa—through healing, mentoring, and
                 meaningful conversations.
               </p>
             </AnimatedElement>
+            <div className="w-full flex justify-between">
+              {/* Quick Links */}
+              <AnimatedElement
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul className="space-y-5 text-white text-sm font-light">
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-purple-300 transition-colors"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-purple-300 transition-colors"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-purple-300 transition-colors"
+                    >
+                      FAQs
+                    </a>
+                  </li>
+                </ul>
+              </AnimatedElement>
 
-            {/* Quick Links */}
-            <AnimatedElement
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.5 }}
-            >
-              <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-4 text-white text-sm font-light">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-purple-300 transition-colors"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-purple-300 transition-colors"
-                  >
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-purple-300 transition-colors"
-                  >
-                    FAQs
-                  </a>
-                </li>
-              </ul>
-            </AnimatedElement>
+              {/* Connect with Us */}
+              <AnimatedElement
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                <h3 className="text-xl font-medium mb-4">Connect with Us</h3>
+                <address className="not-italic space-y-5 text-white text-sm font-light">
+                  <p>Lagos, Nigeria</p>
+                  <p>
+                    <a
+                      href="mailto:hello@myguy.me"
+                      className="hover:text-purple-300 transition-colors"
+                    >
+                      hello@myguy.me
+                    </a>
+                  </p>
+                  <div className="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      aria-label="LinkedIn"
+                      className="bg-white text-secondary-900 hover:text-purple-300 transition-colors p-2 rounded-full"
+                    >
+                      <FaLinkedinIn className="w-4 h-4" />
+                    </a>
 
-            {/* Connect with Us */}
-            <AnimatedElement
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.5 }}
-            >
-              <h3 className="text-base font-medium mb-4">Connect with Us</h3>
-              <address className="not-italic space-y-4 text-white text-sm font-light">
-                <p>Lagos, Nigeria</p>
-                <p>
-                  <a
-                    href="mailto:hello@myguy.me"
-                    className="hover:text-purple-300 transition-colors"
-                  >
-                    hello@myguy.me
-                  </a>
-                </p>
-                <div className="flex space-x-4 mt-4">
-                  <a
-                    href="#"
-                    aria-label="LinkedIn"
-                    className="bg-white text-secondary-900 hover:text-purple-300 transition-colors p-2 rounded-full"
-                  >
-                    <FaLinkedinIn className="w-4 h-4" />
-                  </a>
+                    <a
+                      href="#"
+                      aria-label="X (Twitter)"
+                      className="bg-white text-secondary-900 hover:text-purple-300 transition-colors p-2 rounded-full"
+                    >
+                      <BsTwitterX className="w-4 h-4" />
+                    </a>
 
-                  <a
-                    href="#"
-                    aria-label="X (Twitter)"
-                    className="bg-white text-secondary-900 hover:text-purple-300 transition-colors p-2 rounded-full"
-                  >
-                    <BsTwitterX className="w-4 h-4" />
-                  </a>
-
-                  <a
-                    href="#"
-                    aria-label="Instagram"
-                    className="bg-white text-secondary-900 hover:text-purple-300 transition-colors p-2 rounded-full"
-                  >
-                    <BiLogoInstagramAlt className="w-4 h-4" />
-                  </a>
-                </div>
-              </address>
-            </AnimatedElement>
+                    <a
+                      href="#"
+                      aria-label="Instagram"
+                      className="bg-white text-secondary-900 hover:text-purple-300 transition-colors p-2 rounded-full"
+                    >
+                      <BiLogoInstagramAlt className="w-4 h-4" />
+                    </a>
+                  </div>
+                </address>
+              </AnimatedElement>
+            </div>
           </AnimatedContainer>
 
           {/* Copyright and Legal */}
           <AnimatedElement
-            className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center font-light text-xs text-[#F7F8FA]"
+            className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between text-sm text-[#F7F8FA]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <p>&copy; 2025 MyGuy. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="flex justify-between  space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-purple-300 transition-colors">
                 Privacy Policy
               </a>

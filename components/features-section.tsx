@@ -43,7 +43,7 @@ export default function FeaturesSection() {
 
   return (
     <section className="bg-white">
-      <div className="w-full p-4 md:max-w-6xl mx-auto text-center py-16">
+      <div className="w-full p-5 md:max-w-6xl mx-auto text-center py-16">
         <AnimatedElement delay={0.1} duration={0.5}>
           <Badge className="bg-transparent border border-secondary-400 text-secondary-400 px-5 py-2 rounded-full mb-6">
             FEATURES
@@ -52,17 +52,17 @@ export default function FeaturesSection() {
         
         <AnimatedHeading 
           level={2}
-          className="text-[40px] font-medium text-secondary-900 leading-tight mb-4"
+          className="text-[34px] md:text-[40px] font-medium text-secondary-900 leading-tight mb-4"
           delay={0.2}
         >
           Redefining Masculinity, One Feature at a Time
         </AnimatedHeading>
         
         <AnimatedText 
-          className="text-base text-neutral-200 mb-16 max-w-2xl mx-auto leading-relaxed"
+          className="text-lg font-light md:text-base text-neutral-200 mb-16 max-w-2xl mx-auto leading-relaxed"
           delay={0.3}
         >
-          Discover tools designed to help boys and men heal, open up, and become their best selves—together.
+         Discover tools designed to help boys and men heal, open up, and become their best selves—together.
         </AnimatedText>
 
         <AnimatedContainer 
@@ -95,8 +95,8 @@ export default function FeaturesSection() {
                 }}
               />
               <div className="relative z-10 w-full items-start text-left px-6 pb-6">
-                <h3 className="text-[26px] font-medium text-secondary-900 mb-1">{feature.title}</h3>
-                <p className="text-neutral-200 leading-relaxed font-light">{feature.description}</p>
+                <h3 className="text-[26px] font-medium text-secondary-900 mb-2">{feature.title}</h3>
+                <p className="text-neutral-200 lead font-light text-base">{feature.description}</p>
               </div>
             </AnimatedElement>
           ))}

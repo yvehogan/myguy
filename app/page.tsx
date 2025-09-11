@@ -14,7 +14,7 @@ export default function Home() {
       <AboutSection />
       <PersonaSection />
       <FeaturesSection />
-      <PartnerSection />
+      {/* <PartnerSection /> */}
       <FaqSection />
       <CtaSection />
       <FooterSection />

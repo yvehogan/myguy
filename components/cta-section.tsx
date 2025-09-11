@@ -5,6 +5,7 @@ import {
   AnimatedElement, 
   AnimatedHeading, 
 } from "@/components/ui/animated-element"
+import Link from "next/link";
 
 export default function CtaSection() {
   return (
@@ -28,8 +29,10 @@ export default function CtaSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Button className="bg-white text-[#7B20C8] hover:bg-gray-100 rounded-full px-8 py-8 text-base w-[210px]">
+          <Button className="bg-white text-[#7B20C8] hover:bg-gray-100 rounded-full px-8 py-8 text-base w-[210px]" asChild>
+            <Link href="/waitlist">
             Join the waitlist
+            </Link>
           </Button>
         </AnimatedElement>
       </AnimatedContainer>

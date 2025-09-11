@@ -79,7 +79,7 @@ export default function FaqSection() {
         </AnimatedHeading>
         
         <AnimatedText 
-          className="text-base text-neutral-200 mb-16 max-w-2xl mx-auto leading-relaxed"
+          className="text-lg md:text-base font-light text-neutral-200 mb-16 max-w-2xl mx-auto leading-relaxed"
           delay={0.3}
         >
           We understand that choosing the right mentorship program is a big decision, and you may have some questions.

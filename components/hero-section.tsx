@@ -7,16 +7,17 @@ import {
   AnimatedHeading, 
   AnimatedText 
 } from "@/components/ui/animated-element";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div className="p-2">
+    <div className="md:p-2">
       <div
-        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero.png')] p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-[40px]"
+        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero-mobile.png')] md:bg-[url('/images/hero.png')] md:p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-xl md:rounded-[40px]"
         style={{ backgroundPosition: "center top" }}
       >
         <Navbar />
-        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt-10 md:pt-24 pb-40 w-full">
+        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt-10 md:pt-24 md:pb-40 w-full">
           <AnimatedContainer className="text-center w-full">
             <AnimatedHeading 
               level={1}
@@ -39,8 +40,10 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="text-white rounded-full px-8 py-4 text-lg font-medium">
-                Join the Waitlist
+              <Button className="text-white rounded-full px-8 py-4 text-lg font-medium" asChild>
+            <Link href="/waitlist">
+            Join the waitlist
+            </Link>
               </Button>
             </AnimatedElement>
           </AnimatedContainer>

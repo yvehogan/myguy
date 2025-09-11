@@ -38,7 +38,7 @@ export default function PartnerSection() {
         </AnimatedHeading>
         
         <AnimatedText 
-          className="text-base text-[#F4F4F4] mb-12 leading-relaxed"
+          className="text-lg md:text-base text-[#F4F4F4] mb-12 leading-relaxed"
           delay={0.3}
         >
           We&apos;re on a mission to redefine masculinity in Africa through healing, mentoring, and honest conversation. But

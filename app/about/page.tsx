@@ -1,20 +1,18 @@
-import AboutSection from "@/components/about-section"
-import PartnerSection from "@/components/partner-section"
 import FooterSection from "@/components/footer-section"
 import AboutPageHeader from "@/components/about-page-header"
 import WhyMyGuySection from "@/components/why-my-guy-section"
-import MissionVisionSection from "@/components/mission-vission-section"
-import WhatWeDoSection from "@/components/what-we-do-section"
+import AboutUsSection from "@/components/about-us"
+import AboutFounderSection from "@/components/about-founder-section"
+import AboutTeamSection from "@/components/meet-the-team"
 
 export default function AboutPage() {
   return (
     <main>
       <AboutPageHeader />
-      <AboutSection />
+      <AboutUsSection />
       <WhyMyGuySection />
-      <MissionVisionSection />
-      <WhatWeDoSection />
-      <PartnerSection />
+      <AboutFounderSection />
+      <AboutTeamSection />
       <FooterSection />
     </main>
   )

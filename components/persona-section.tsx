@@ -50,11 +50,10 @@ export default function PersonaSection() {
         </AnimatedHeading>
         
         <AnimatedText 
-          className="text-base text-neutral-200 mb-16 max-w-2xl mx-auto leading-relaxed"
+          className="text-[18px] text-neutral-200 font-light mb-16 max-w-2xl mx-auto leading-relaxed"
           delay={0.3}
         >
-          Whether you&apos;re seeking guidance, healing, or just someone to talk to—Guyversation is a safe space for every
-          boy and man on a journey to become whole.
+         Whether you&apos;re seeking guidance, healing, or just someone to talk to—MyGuy is a safe space for every boy and man on a journey to become whole.
         </AnimatedText>
 
         <AnimatedContainer 
@@ -72,7 +71,7 @@ export default function PersonaSection() {
           {personas.map((persona, index) => (
             <AnimatedElement
               key={index}
-              className="rounded-3xl flex flex-col items-center text-center"
+              className="bg-white rounded-3xl flex flex-col items-center text-center mx-auto"
               variants={{
                 hidden: { opacity: 0, y: 40 },
                 visible: { opacity: 1, y: 0 }
@@ -83,18 +82,17 @@ export default function PersonaSection() {
                 transition: { duration: 0.3 } 
               }}
             >
-              <div className="relative w-full overflow-hidden h-[440px] md:h-auto">
+              <div className="relative w-full max-w-[340px] md:max-w-full md:h-[340px] mx-auto">
                 <Image
                   src={persona.image || persona.bgColor}
                   alt={persona.title}
                   height={400}
                   width={400}
                   objectFit="cover"
-                  className="overflow-hidden"
-                  // style={{ backgroundColor: persona.bgColor }}
+                  className="overflow-hidden rounded-2xl"
                 />
               </div>
-              <h3 className="text-[20px] font-medium text-secondary-900 mt-5 mb-5">{persona.title}</h3>
+              <h3 className="text-[20px] font-medium text-secondary-900 mt-2 mb-4">{persona.title}</h3>
             </AnimatedElement>
           ))}
         </AnimatedContainer>

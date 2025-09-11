@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next/types"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -40,11 +42,23 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/images/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png" />
-        {/* Add a random query parameter to force cache refresh */}
         <link rel="icon" href={`/images/favicon.png?v=${new Date().getTime()}`} />
       </head>
       <body className={inter.className}>
         {children}
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          style={{ maxWidth: "90vw", fontSize: "1rem" }}
+        />
       </body>
     </html>
   )
