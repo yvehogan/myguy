@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json(
       {
-        message: "Successfully added to waitlist and saved to Google Sheets",
+        message: "Congratulations. You have successfully been added to the waitlist. We'll be in touch soon!",
         timestamp: entry.submittedAt,
       },
       { status: 200 },

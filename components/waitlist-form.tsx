@@ -80,7 +80,7 @@ export default function WaitlistForm() {
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto shadow-2xl border-0 bg-white">
+    <Card className="w-full max-w-xl mx-auto shadow-2xl border-0 bg-white max-h-[95vh] overflow-y-auto">
       <CardHeader className="text-center pb-4">
         <div className="mx-auto flex items-center justify-center">
           <Image
@@ -94,7 +94,7 @@ export default function WaitlistForm() {
         <CardDescription className="text-neutral-200 text-[16px] font-light">Please fill the details below to join the waitlist</CardDescription>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="persona" className="text-sm font-medium text-gray-700">
