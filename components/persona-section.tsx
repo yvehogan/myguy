@@ -82,7 +82,7 @@ export default function PersonaSection() {
                 transition: { duration: 0.3 } 
               }}
             >
-              <div className="relative w-full max-w-[340px] md:max-w-full md:h-[340px] mx-auto">
+              <div className="relative w-full max-w-[340px] lg:max-w-full lg:h-[340px] mx-auto">
                 <Image
                   src={persona.image || persona.bgColor}
                   alt={persona.title}

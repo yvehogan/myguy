@@ -1,11 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Navbar from "./navbar";
-import { 
-  AnimatedContainer, 
-  AnimatedElement, 
-  AnimatedHeading, 
-  AnimatedText 
+import {
+  AnimatedContainer,
+  AnimatedElement,
+  AnimatedHeading,
+  AnimatedText,
 } from "@/components/ui/animated-element";
 import Link from "next/link";
 
@@ -13,37 +13,39 @@ export default function HeroSection() {
   return (
     <div className="md:p-2">
       <div
-        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero-mobile.png')] md:bg-[url('/images/hero.png')] md:p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-xl md:rounded-[40px]"
+        className="min-h-screen md:min-h-[130vh] bg-[#F2F4FF] bg-[url('/images/hero-mobile.png')] md:bg-[url('/images/hero.png')] md:p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-xl md:rounded-[40px]"
         style={{ backgroundPosition: "center top" }}
       >
         <Navbar />
-        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt-10 md:pt-24 md:pb-40 w-full">
+        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt-10 md:-mt-[500px] lg:-mt-[230px] md:pb-40 w-full">
           <AnimatedContainer className="text-center w-full">
-            <AnimatedHeading 
+            <AnimatedHeading
               level={1}
               className="text-3xl md:text-[65px] font-medium text-secondary-900 leading-tight mb-8 w-full md:max-w-6xl mx-auto"
               delay={0.2}
             >
-              A Safe Space where struggling quietly is no longer the only option.
+              A Safe Space where struggling quietly is no longer the only
+              option.
             </AnimatedHeading>
-            
-            <AnimatedText 
+
+            <AnimatedText
               className="text-lg text-neutral-200 font-light mb-16 max-w-2xl mx-auto leading-relaxed"
               delay={0.4}
             >
-              MyGuy is Africa&apos;s first digital community that connects boys to
-              mentors, men to community, and everyone to healing.
+              MyGuy is Africa&apos;s first digital community that connects boys
+              to mentors, men to community, and everyone to healing.
             </AnimatedText>
-            
+
             <AnimatedElement
               delay={0.6}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="text-white rounded-full px-8 py-4 text-lg font-medium" asChild>
-            <Link href="/waitlist">
-            Join the waitlist
-            </Link>
+              <Button
+                className="text-white rounded-full px-8 py-4 text-lg font-medium"
+                asChild
+              >
+                <Link href="/waitlist">Join the waitlist</Link>
               </Button>
             </AnimatedElement>
           </AnimatedContainer>

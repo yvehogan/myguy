@@ -47,7 +47,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile view */}
-      <div className="md:hidden w-full space-x-8 bg-secondary-900 backdrop-blur-sm rounded-full px-8 py-3 flex justify-between items-center">
+      <div className="md:hidden w-full space-x-8 bg-secondary-900 backdrop-blur-sm rounded-full px-8 py-2 flex justify-between items-center">
         <Image
           src="/images/logo.png"
           alt="MyGuy Logo"

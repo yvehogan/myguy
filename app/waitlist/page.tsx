@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main
-      className="h-screen relative overflow-hidden flex items-center justify-center p-4"
+      className="h-screen relative overflow-hidden flex items-center justify-center p-2 md:p-4 bg-[#F2F4FF]"
       style={{
         backgroundImage: "url('/images/form-bg.png')",
         backgroundSize: "cover",
@@ -29,7 +29,7 @@ export default function Home() {
           />
         </Link>
       </div>
-      <div className="mt-12 w-full">
+      <div className="mt-[240px] md:mt-12 pb-5 w-full">
         <WaitlistForm />
       </div>
     </main>

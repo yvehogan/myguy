@@ -14,7 +14,7 @@ export default function AboutFounderSection() {
       <>
         <div className="w-full md:max-w-6xl mt-16 md:mt-32 mb-24 mx-auto flex justify-between flex-col lg:flex-row gap-2 md:gap-10 p-4 lg:p-0 font-light">
           <AnimatedElement
-            className="w-full lg:w-[35%]  justify-start"
+            className="w-full md:w-[35%]  justify-start"
             variants={fadeInRight}
             duration={0.8}
             delay={0.3}
@@ -28,7 +28,7 @@ export default function AboutFounderSection() {
                 className=""
               />
             </div>
-            <div className="mt-6 md:mt-10 flex relative flex-col  justify-center items-center">
+            <div className="mt-6 lg:mt-10 flex relative flex-col  justify-center items-center">
               <h1 className="md:text-[28px] z-10 text-secondary-900 text-3xl font-medium md:leading-[61px] tracking-[-1%] mb-2">
                 Solomon O. Ayodele
               </h1>

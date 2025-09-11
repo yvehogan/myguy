@@ -80,7 +80,7 @@ export default function WaitlistForm() {
   }
 
   return (
-    <Card className="w-full max-w-xl mx-auto shadow-2xl border-0 bg-white max-h-[95vh] overflow-y-auto">
+    <Card className="w-full max-w-xl mx-auto shadow-2xl border-0 bg-white max-h-[95vh] overflow-y-auto mb-24 md:mb-0">
       <CardHeader className="text-center pb-4">
         <div className="mx-auto flex items-center justify-center">
           <Image

@@ -24,11 +24,11 @@ export default function AboutUsSection() {
     },
   ];
   return (
-    <section className="bg-white mb-28">
+    <section className="bg-white mb-28 md:p-2">
       <>
         <div className="w-full md:max-w-6xl mx-auto text-center pt-24 pb-10 md:pb-24">
           <AnimatedContainer
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-co md:grid-cols-3 gap-8"
             variants={{
               hidden: {},
               visible: {
@@ -126,7 +126,7 @@ export default function AboutUsSection() {
         {/* My Partners section */}
         <div className="w-full max-w-5xl mx-auto text-center">
           <div className="flex justify-center items-center w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" style={{ width: "max-content" }}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5" style={{ width: "max-content" }}>
               <Image
                 src="/images/partner1.png"
                 alt="Partner 1"
