@@ -11,13 +11,13 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div className="md:p-2">
+    <div className="">
       <div
-        className="min-h-screen md:min-h-[130vh] bg-[#F2F4FF] bg-[url('/images/hero-mobile.png')] md:bg-[url('/images/hero.png')] md:p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-xl md:rounded-[40px]"
+        className="min-h-screen bg-[#F2F4FF] bg-[url('/images/hero-mobile.png')] md:bg-[url('/images/hero.png')] md:p-2 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-x-hidden flex flex-col pb-[400px] rounded-xl md:rounded-[40px]"
         style={{ backgroundPosition: "center top" }}
       >
         <Navbar />
-        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt-10 md:-mt-[500px] lg:-mt-[230px] md:pb-40 w-full">
+        <div className="flex-grow flex items-center justify-center px-2 md:px-8 pt- md:-pt-32 md:mt-0 lg:mt-0 md:pb-40 w-full">
           <AnimatedContainer className="text-center w-full">
             <AnimatedHeading
               level={1}
