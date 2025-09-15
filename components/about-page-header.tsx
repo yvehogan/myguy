@@ -9,7 +9,7 @@ import {
 
 export default function AboutPageHeader() {
   return (
-    <div className="md:p-2 rounded-full">
+    <div className="rounded-full">
       <section 
         className="pb-32 text-center md:rounded-[40px] bg-[url('/images/about-hero.png')] bg-cover bg-center bg-no-repeat"
       >
