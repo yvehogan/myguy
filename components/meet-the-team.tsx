@@ -30,19 +30,19 @@ export default function AboutTeamSection() {
     {
       name: "Henry Ozomgbachi",
       title: "Engineering Lead",
-      image: "/images/schools.png",
+      image: "/images/henry.png",
       bgColor: "#FF9BC9",
     },
     {
       name: "Victor Onwuelu",
       title: "Product Design",
-      image: "/images/mentees.png",
+      image: "/images/victor.png",
       bgColor: "#DAACFF",
     },
     {
       name: "Esther Ebokpo",
       title: "Social Media",
-      image: "/images/mentor.png",
+      image: "/images/esther.png",
       bgColor: "#A2F0D6",
     },
     {
