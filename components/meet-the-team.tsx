@@ -28,20 +28,27 @@ export default function AboutTeamSection() {
       bgColor: "#FFB199",
     },
     {
-      name: "Henry Ozomgbachi",
-      title: "Engineering Lead",
-      image: "/images/henry.png",
-      bgColor: "#FF9BC9",
-    },
-    {
       name: "Victor Onwuelu",
-      title: "Product Design",
+      title: "Product Designer",
       image: "/images/victor.png",
       bgColor: "#DAACFF",
     },
     {
+      name: "Henry Ozomgbachi",
+      title: "Backend Engineer",
+      image: "/images/henry.png",
+      bgColor: "#FF9BC9",
+    },
+    {
+      name: "Evelyn Ita",
+      title: "Frontend Engineer",
+      image: "/images/evelyn.png",
+      bgColor: "#FF9BC9",
+    },
+
+    {
       name: "Esther Ebokpo",
-      title: "Social Media",
+      title: "Digital Marketer",
       image: "/images/esther.png",
       bgColor: "#A2F0D6",
     },
