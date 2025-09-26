@@ -26,7 +26,7 @@ export default function AboutUsSection() {
   return (
     <section className="bg-white mb-28 md:p-2">
       <>
-        <div className="w-full md:max-w-6xl mx-auto text-center pt-24 pb-10 md:pb-24">
+        <div className="w-full md:max-w-6xl mx-auto text-center pt-24 pb-10 lg:pb-24">
           <AnimatedContainer
             className="grid grid-cols-1 md:grid-co md:grid-cols-3 gap-8"
             variants={{

@@ -6,14 +6,15 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-8 py-4 max-w-5xl mx-auto w-full bg-transparent">
-      <div className="hidden w-full md:flex justify-between items-center space-x-8 bg-secondary-900 backdrop-blur-sm rounded-full px-8 py-3">
+    <nav className="flex items-center justify-between px-8 pt-4 max-w-5xl mx-auto w-full bg-transparent">
+      <div className="hidden w-full lg:flex justify-between items-center space-x-8 bg-secondary-900 backdrop-blur-sm rounded-full px-8 py-3 h-16">
         <Image
           src="/images/logo.png"
           alt="MyGuy Logo"
-          width={120}
-          height={120}
-          className="rounded-full"
+          width={100}
+          height={100}
+          className="rounded-full object-contain"
+          priority
         />
         <div className="flex items-center space-x-8">
           <Link
@@ -47,20 +48,21 @@ export default function Navbar() {
       </div>
 
       {/* Mobile view */}
-      <div className="md:hidden w-full space-x-8 bg-secondary-900 backdrop-blur-sm rounded-full px-8 py-2 flex justify-between items-center">
+      <div className="lg:hidden w-full space-x-8 bg-secondary-900 backdrop-blur-sm rounded-full px-8 py-2 flex justify-between items-center h-14">
         <Image
           src="/images/logo.png"
           alt="MyGuy Logo"
           width={100}
           height={100}
-          className="rounded-full"
+          className="rounded-full object-contain"
+          priority
         />
 
         {/* Mobile menu trigger - positioned on the right */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="text-gray-900">
-              <MenuIcon className="h-12 w-12 text-white" />
+            <Button variant="ghost" size="icon" className="text-gray-900 w-10 h-10">
+              <MenuIcon className="h-6 w-6 text-white" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
@@ -73,7 +75,7 @@ export default function Navbar() {
               alt="MyGuy Logo"
               width={100}
               height={100}
-              className="rounded-full"
+              className="rounded-full object-contain"
             />
             <Link
               href="/"

@@ -11,7 +11,7 @@ export default function AboutPageHeader() {
   return (
     <div className="rounded-full">
       <section 
-        className="pb-32 text-center md:rounded-[40px] bg-[url('/images/about-hero.png')] bg-cover bg-center bg-no-repeat"
+        className="pb-32 text-center lg:rounded-[40px] bg-[url('/images/about-hero.png')] bg-cover bg-center bg-no-repeat"
       >
         <Navbar />
         <AnimatedContainer className="max-w-7xl mx-auto">

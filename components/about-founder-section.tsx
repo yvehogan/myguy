@@ -12,14 +12,14 @@ export default function AboutFounderSection() {
   return (
     <section className="bg-white">
       <>
-        <div className="w-full md:max-w-6xl mt-16 md:mt-32 mb-24 mx-auto flex justify-between flex-col lg:flex-row gap-2 md:gap-10 p-4 lg:p-0 font-light">
+        <div className="w-full md:max-w-6xl mt-16 lg:mt-32 mb-24 mx-auto flex justify-between flex-col lg:flex-row gap-2 md:gap-10 p-4 lg:p-0 font-light">
           <AnimatedElement
-            className="w-full md:w-[35%]  justify-start"
+            className="w-full lg:w-[35%]  justify-start"
             variants={fadeInRight}
             duration={0.8}
             delay={0.3}
           >
-            <div className="relative w-full md:max-w-xl h-[400px] md:h-[500px] overflow-hidden p-8 bg-white">
+            <div className="relative w-full lg:max-w-xl h-[400px] md:h-[500px] overflow-hidden p-8 bg-white">
               <Image
                 src="/images/solomon.png"
                 alt="Man speaking to a group of boys at an event"
