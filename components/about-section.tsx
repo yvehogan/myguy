@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import {
   AnimatedElement,
-  AnimatedHeading,
   AnimatedText,
   fadeInLeft,
   fadeInRight,

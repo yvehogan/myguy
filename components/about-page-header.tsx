@@ -1,10 +1,8 @@
 "use client";
-import Link from "next/link";
 import Navbar from "./navbar";
 import { 
   AnimatedContainer, 
   AnimatedHeading, 
-  AnimatedText 
 } from "@/components/ui/animated-element";
 
 export default function AboutPageHeader() {
